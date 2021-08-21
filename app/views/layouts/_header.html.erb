@@ -1,0 +1,17 @@
+<header>
+    <div class="header-logo-contain">
+        <%= link_to root_path do %>
+            <%= image_tag image_url('lampli.png'), alt: "icons", class: "header-logo-img" %>
+            <p>L'ampli</p>
+        <% end %>
+    </div>
+
+    <nav class="header-nav">
+        <ul class="header-list">
+            <li><% if current_page?(controller: "static_pages", action: "home") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Acceuil", root_path %></li>
+            <li><% if current_page?(controller: "static_pages", action: "podcast") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Podcasts", podcast_path %></li>
+            <li><% if current_page?(controller: "static_pages", action: "team") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "L'équipe", team_path %></li>
+            <li><% if current_page?(controller: "static_pages", action: "support") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %> <% end %><%= link_to "Nous Soutenir", support_path %></li>
+        </ul>
+    </nav>
+</header>
