@@ -1,9 +1,15 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b1a1f;
+    color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 10px;
+    padding: 15px 10px;
     .header-logo-contain {
         display: flex;
         flex-direction: row;
@@ -21,18 +27,41 @@ header {
             color: #fff;
 
             .header-logo-img {
-                height: 70px;
+                max-height: 70px;
+                height: calc(min(18vmin, 70px));
                 margin: auto 15px;
             }
 
             p {
-                font-size: 3em;
+                font-size: calc(min(5vmin, 3em));
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 5px;
                 padding: 0;
                 margin: auto 5px;
             }
+        }
+    }
+
+    .big-screen, .hidden {
+        display: none;
+    }
+
+    .litle-screen {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .open-big-header {
+        .open-header-img {
+            height: 35px;
+            cursor: pointer;
         }
     }
 
@@ -62,6 +91,52 @@ header {
                 color: #fff;
                 text-decoration: none;
             }
+        }
+    }
+
+    .big-header {
+        width: 100%;
+        .header-modal-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .close-big-header {
+                .close-header-img {
+
+                    height: 30px;
+                    margin: auto 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        nav.header-nav {
+            text-align: center;
+            ul.header-list {
+                margin: 15px 0;
+                list-style: none;
+                padding: 0;
+                flex-wrap: wrap;
+                
+                li {
+                    margin: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        .litle-screen {
+            width: auto;
+        }
+        .big-screen {
+            display: flex;
+        }
+
+        .open-big-header {
+            display: none;
         }
     }
 }

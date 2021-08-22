@@ -1,4 +1,4 @@
-<% provide(:title, "Acceuil") %>
+<% provide(:title, "Accueil") %>
 
 <div class="home-container">
 <section class="first-section">
@@ -13,7 +13,9 @@
     </div>
 
     <div class="cta-container">
+        <%= link_to podcast_path do %>
         <button>Découvrir les émissions</button>
+        <% end %>
     </div>
     </div>
 

@@ -1,3 +1,91 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.home-container {
+    padding: 5px;
+    margin-bottom: 45px;
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .img-container {
+            .home-first-container {
+                max-width: 100%;
+            }
+        }
+
+        .accroch-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .text-container {
+                .title {
+                    font-size: 2.3em;
+                }
+
+                .subtitle {
+                    font-size: 1.3em;
+                    color: #d8d9e2;
+                }
+            }
+        }
+
+        .cta-container {
+            button {
+                font-size: 1.5em;
+                background: none;
+                color: #fff;
+                border: none;
+                text-decoration: underline;
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .home-container {
+        .first-section {
+            flex-direction: row; 
+            justify-content: center;
+            align-items: stretch;
+
+            .img-container {
+                margin: auto 25px;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .home-first-container {
+                    max-width: calc(min(100%, 450px));
+                }
+            }
+
+            .accroch-container {
+                text-align: left;
+
+                .text-container {
+                    .title {
+                        font-size: 3em;
+                    }
+    
+                    .subtitle {
+                        font-size: 1.8em;
+                        color: #d8d9e2;
+                    }
+                }
+            }
+
+            .cta-container {
+                button {
+                    font-size: 2.3em;
+                }
+            }
+        }
+    }
+}

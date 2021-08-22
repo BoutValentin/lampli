@@ -1,17 +1,49 @@
 <header>
+  <div class="litle-screen">
     <div class="header-logo-contain">
+      <%= link_to root_path do %>
+        <%= image_tag image_url('lampli.png'), alt: "icons", class: "header-logo-img" %>
+        <p>L'ampli</p>
+      <% end %>
+    </div>
+
+    <div class="open-big-header">
+      <%= image_tag image_url('Hamburger.svg'), alt: "hamburger", class: "open-header-img" %>
+    </div>
+  </div>
+
+  <div class="big-screen">
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li><% if current_page?(controller: "static_pages", action: "home") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Accueil", root_path %></li>
+        <li><% if current_page?(controller: "static_pages", action: "podcast") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Podcasts", podcast_path %></li>
+        <li><% if current_page?(controller: "static_pages", action: "team") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "L'équipe", team_path %></li>
+        <li><% if current_page?(controller: "static_pages", action: "support") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %> <% end %><%= link_to "Nous Soutenir", support_path %></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="big-header hidden">
+    <div class="header-modal-top">
+      <div class="header-logo-contain">
         <%= link_to root_path do %>
-            <%= image_tag image_url('lampli.png'), alt: "icons", class: "header-logo-img" %>
-            <p>L'ampli</p>
+          <%= image_tag image_url('lampli.png'), alt: "icons", class: "header-logo-img" %>
+          <p>L'ampli</p>
         <% end %>
+      </div>
+
+      <div class="close-big-header">
+        <%= image_tag image_url('Close.svg'), alt: "hamburger", class: "close-header-img" %>
+      </div>
     </div>
 
     <nav class="header-nav">
-        <ul class="header-list">
-            <li><% if current_page?(controller: "static_pages", action: "home") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Acceuil", root_path %></li>
-            <li><% if current_page?(controller: "static_pages", action: "podcast") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Podcasts", podcast_path %></li>
-            <li><% if current_page?(controller: "static_pages", action: "team") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "L'équipe", team_path %></li>
-            <li><% if current_page?(controller: "static_pages", action: "support") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %> <% end %><%= link_to "Nous Soutenir", support_path %></li>
-        </ul>
+      <ul class="header-list">
+        <li><% if current_page?(controller: "static_pages", action: "home") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Accueil", root_path %></li>
+        <li><% if current_page?(controller: "static_pages", action: "podcast") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "Podcasts", podcast_path %></li>
+        <li><% if current_page?(controller: "static_pages", action: "team") %> <%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %><% end %><%= link_to "L'équipe", team_path %></li>
+        <li><% if current_page?(controller: "static_pages", action: "support") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %> <% end %><%= link_to "Nous Soutenir", support_path %></li>
+      </ul>
     </nav>
+  </div>
 </header>
