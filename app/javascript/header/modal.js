@@ -1,6 +1,5 @@
 // Handle header open
 const ready = () => {
-    console.log('wee')
     const header_open_button = document.querySelector('.open-big-header .open-header-img');
     const header_close_button = document.querySelector('.big-header .header-modal-top .close-big-header');
     
@@ -19,4 +18,4 @@ const ready = () => {
     header_open_button.addEventListener("click", show);
     header_close_button.addEventListener("click", hide);
 }
-document.addEventListener('turbolinks:load', ready)
+//document.addEventListener('turbolinks:load', ready)

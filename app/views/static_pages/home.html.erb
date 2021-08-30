@@ -1,5 +1,5 @@
 <% provide(:title, "Accueil") %>
-
+<% if false %>
 <div class="home-container">
 <section class="first-section">
     <div class="img-container">
@@ -21,3 +21,40 @@
 
 </section>
 </div>
+<% end %>
+
+<div class="home-container">
+    <section class="one-section">
+        <%= render partial: 'shared/title', locals: {title: "Écoutez nos émissions :"} %>
+        <div class="all-cover">
+            <%= render partial: 'shared/cover', locals: {link: "https://spotify.com", cover_url: "Vinyle/Spotify_Cover.svg", disc_url: "Vinyle/Spotify_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://anchor.fm/lampli", cover_url: "Vinyle/Anchor_Cover.svg", disc_url: "Vinyle/Anchor_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://www.youtube.com/channel/UCZge9ra1LDY32WvMxbEUBtw", cover_url: "Vinyle/Youtube_Cover.svg", disc_url: "Vinyle/Youtube_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://www.twitch.tv/lampli_studio", cover_url: "Vinyle/Twitch_Cover.svg", disc_url: "Vinyle/Twitch_Disc.svg"} %>
+        </div>
+    </section>
+    <section class="one-section">
+        <%= render partial: 'shared/title', locals: {title: "Suivez nous sur les réseaux sociaux :"} %>
+        <div class="all-cover">
+            <%= render partial: 'shared/cover', locals: {link: "https://www.facebook.com/lamplistudio", cover_url: "Vinyle/Facebook_Cover.svg", disc_url: "Vinyle/Facebook_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://www.instagram.com/lampli_studio/", cover_url: "Vinyle/Instagram_Cover.svg", disc_url: "Vinyle/Instagram_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://twitter.com/lampli_studio", cover_url: "Vinyle/Twitter_Cover.svg", disc_url: "Vinyle/Twitter_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://www.twitch.tv/lampli_studio", cover_url: "Vinyle/Linkedin_Cover.svg", disc_url: "Vinyle/Linkedin_Disc.svg"} %>
+        </div>
+    </section>
+    <section class="one-section">
+        <%= render partial: 'shared/title', locals: {title: "Soutenez L'Ampli à travers un don :"} %>
+        <div class="all-cover">
+            <%= render partial: 'shared/cover', locals: {link: "https://paypal.me/lamplistudio", cover_url: "Vinyle/Paypal_Cover.svg", disc_url: "Vinyle/Paypal_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://utip.io/lampli", cover_url: "Vinyle/Utip_Cover.svg", disc_url: "Vinyle/Utip_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://fr.tipeee.com/lampli", cover_url: "Vinyle/Tipeee_Cover.svg", disc_url: "Vinyle/Tipeee_Disc.svg"} %>
+        </div>
+    </section>
+    <section class="one-section">
+        <%= render partial: 'shared/title', locals: {title: "Soutenez L'Ampli en achetant des vêtements et goodies L'Ampli :"} %>
+        <div class="all-cover">
+            <%= render partial: 'shared/cover', locals: {link: "https://lampli.myspreadshop.fr/", cover_url: "Vinyle/Spreadshirt_Cover.svg", disc_url: "Vinyle/Spreadshirt_Disc.svg"} %>
+            <%= render partial: 'shared/cover', locals: {link: "https://www.redbubble.com/fr/people/Lampli/shop?asc=u", cover_url: "Vinyle/Redbubble_Cover.svg", disc_url: "Vinyle/Redbubble_Disc.svg"} %>
+        </div>
+    </section>
+</div> 

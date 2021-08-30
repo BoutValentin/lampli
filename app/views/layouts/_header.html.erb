@@ -1,3 +1,5 @@
+<%# We doing that for not destroing this code %>
+<% if false %>
 <header>
   <div class="litle-screen">
     <div class="header-logo-contain">
@@ -45,5 +47,19 @@
         <li><% if current_page?(controller: "static_pages", action: "support") %><%= image_tag image_url('sound-waves.svg'), alt: "icons", class: "current-path-img" %> <% end %><%= link_to "Nous Soutenir", support_path %></li>
       </ul>
     </nav>
+  </div>
+</header>
+<% end %>
+
+<header>
+  <div class="row-1">
+    <%= link_to root_path do %>
+      <%= image_tag image_url('lampli_logo/lampli_logo_white_nt.svg'), atl: "logo", class: "header-logo-img" %>
+      <p>L'Ampli</p>
+    <% end %>
+  </div>
+
+  <div class="row-2">
+    <p>3 amis, 3 micros et quelques podcasts</p>
   </div>
 </header>

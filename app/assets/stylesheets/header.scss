@@ -1,4 +1,5 @@
-header {
+/* Uncomments when new header */
+/* header {
     position: fixed;
     top: 0;
     left: 0;
@@ -137,6 +138,56 @@ header {
 
         .open-big-header {
             display: none;
+        }
+    }
+} */
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #151418;
+    color: #ffffff;
+    z-index: 10;
+    border-radius: 0 0 8px 8px;
+    
+    .row-1 {
+        a, a:visited {
+        display: flex;
+        margin: 15px auto;
+        text-decoration: none;
+        color: white;
+        img {
+            height: 90px;
+            margin: auto 20px;
+        }
+
+        p {
+            font-size: calc(max(26px,min(5vmin, 3em)));
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            padding: 0;
+            margin: auto 5px;
+        }
+        }
+    }
+
+    .row-2 {
+        text-align: center;
+        p {
+            font-size: calc(max(16px, min(3vmin, 2em)));
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            padding: 0 0 10px 0;
+            margin: auto 5px;
         }
     }
 }

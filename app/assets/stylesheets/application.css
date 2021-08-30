@@ -16,7 +16,7 @@
 
 
 html, body {
-    background-color: #1b1a1f;
+    background-color: #151418;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -25,7 +25,7 @@ html, body {
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 160px;
 }
 
 * {

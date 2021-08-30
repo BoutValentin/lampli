@@ -1,0 +1,45 @@
+a.cover, a:visited.cover {
+    color: white;
+    display: block;
+    position: relative;
+    padding: 5px;
+    width: 160px;
+    margin: 20px 60px;
+    z-index: 2;
+    .cover-img, .disc-img {
+        height: 150px;
+        position:  initial;
+    }
+
+    .disc-img {
+        position: absolute;
+        top: 0;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    &:hover {
+       
+    }
+
+}
+
+a.cover:hover {
+    .disc-img {
+        transform: translateX(55%) rotate(30deg);
+    }
+}
+a.cover:active {
+    .disc-img {
+        transform: translateX(55%) rotate(30deg);
+    }
+}
+
+@media (max-width: 560px) {
+    a.cover {
+        transform: translateX(-20%);
+        .disc-img {
+            transform: translateX(55%) rotate(30deg);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<svg width="515" height="515" viewBox="0 0 515 515" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="258" cy="257" r="243" fill="#1B1A1F"/>
+<circle cx="257.5" cy="257.5" r="217" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3"/>
+<circle cx="257.5" cy="257.5" r="193" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3"/>
+<circle cx="258" cy="257" r="202.427" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3.14653"/>
+<circle cx="257.5" cy="257.5" r="172" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3"/>
+<circle cx="259.5" cy="255.5" r="180.922" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3.15562"/>
+<circle cx="258" cy="257" r="149.5" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3"/>
+<circle cx="259" cy="256" r="162.371" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3.25828"/>
+<circle cx="258" cy="257" r="128.5" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3"/>
+<circle cx="257.5" cy="257.5" r="99" fill="#1B1A1F" stroke="#2B2B2B" stroke-width="3"/>
+<path d="M320 257.5C320 222.979 292.021 195 257.5 195C222.979 195 195 222.979 195 257.5C195 292.021 222.979 320 257.5 320C257.866 320 258.232 320 258.599 319.976V271.343H245.171V255.693H258.599V244.17C258.599 230.815 266.753 223.54 278.667 223.54C284.38 223.54 289.287 223.955 290.703 224.15V238.115H282.5C276.03 238.115 274.761 241.191 274.761 245.708V255.669H290.264L288.237 271.318H274.761V317.583C300.884 310.088 320 286.04 320 257.5V257.5Z" fill="white"/>
+</svg>
